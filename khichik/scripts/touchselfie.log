@@ -1,0 +1,83 @@
+2025-09-03 22:37:40|__main__        | WARNING | Cups not installed. removing option
+2025-09-03 22:37:40|__main__        | WARNING | picamera not found, trying cv2_camera
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 's' for action 'snap_None'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'S' for action 'snap_None'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding '<F1>' for action 'snap_None'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'f' for action 'snap_Four'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'F' for action 'snap_Four'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding '<F2>' for action 'snap_Four'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'a' for action 'snap_Animation'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'A' for action 'snap_Animation'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding '<F3>' for action 'snap_Animation'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding 'e' for action 'send_email'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding '@' for action 'send_email'
+2025-09-03 22:37:42|user_interface  | DEBUG   | Installing keybinding '<Escape>' for action 'configure'
+2025-09-03 22:37:42|user_interface  | WARNING | install_key_binding: no action 'send_print'
+2025-09-03 22:37:42|tkImageLabel    | DEBUG   | Created ImageLabel with size (1280, 720)
+2025-09-03 22:37:42|user_interface  | WARNING | No hardware buttons found, generating software buttons
+2025-09-03 22:37:56|user_interface  | INFO    | Snaping photo (mode=Four)
+2025-09-03 22:37:56|tkImageLabel    | DEBUG   | Unloading image
+2025-09-03 22:37:57|user_interface  | DEBUG   | snap: starting collage of four
+2025-09-03 22:37:57|user_interface  | ERROR   | snap: error during snapshot
+Traceback (most recent call last):
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 485, in snap
+    self.__show_countdown(config.countdown1,annotate_size = 80)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 679, in __show_countdown
+    self.__show_overlay_countdown(countdown)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 770, in __show_overlay_countdown
+    overlay = self.camera.add_overlay(overlay_image.tobytes(), size=overlay_image.size)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Camera' object has no attribute 'add_overlay'
+2025-09-03 22:38:10|user_interface  | INFO    | Snaping photo (mode=None)
+2025-09-03 22:38:10|tkImageLabel    | DEBUG   | Unloading image
+2025-09-03 22:38:10|user_interface  | DEBUG   | snap: single picture
+2025-09-03 22:38:10|user_interface  | ERROR   | snap: error during snapshot
+Traceback (most recent call last):
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 450, in snap
+    self.__show_countdown(config.countdown1,annotate_size = 160)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 679, in __show_countdown
+    self.__show_overlay_countdown(countdown)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 770, in __show_overlay_countdown
+    overlay = self.camera.add_overlay(overlay_image.tobytes(), size=overlay_image.size)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Camera' object has no attribute 'add_overlay'
+2025-09-03 22:38:30|user_interface  | INFO    | Effect pastel selected
+2025-09-03 22:38:33|user_interface  | INFO    | Snaping photo (mode=Animation)
+2025-09-03 22:38:33|tkImageLabel    | DEBUG   | Unloading image
+2025-09-03 22:38:33|user_interface  | DEBUG   | snap: starting animation
+2025-09-03 22:38:33|user_interface  | ERROR   | snap: error during snapshot
+Traceback (most recent call last):
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 530, in snap
+    self.__show_countdown(config.countdown1,annotate_size = 50)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 679, in __show_countdown
+    self.__show_overlay_countdown(countdown)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 770, in __show_overlay_countdown
+    overlay = self.camera.add_overlay(overlay_image.tobytes(), size=overlay_image.size)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Camera' object has no attribute 'add_overlay'
+2025-09-03 22:38:35|user_interface  | INFO    | Snaping photo (mode=Four)
+2025-09-03 22:38:35|tkImageLabel    | DEBUG   | Unloading image
+2025-09-03 22:38:35|user_interface  | DEBUG   | snap: starting collage of four
+2025-09-03 22:38:35|user_interface  | ERROR   | snap: error during snapshot
+Traceback (most recent call last):
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 485, in snap
+    self.__show_countdown(config.countdown1,annotate_size = 80)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 679, in __show_countdown
+    self.__show_overlay_countdown(countdown)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 770, in __show_overlay_countdown
+    overlay = self.camera.add_overlay(overlay_image.tobytes(), size=overlay_image.size)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Camera' object has no attribute 'add_overlay'
+2025-09-03 22:38:37|user_interface  | INFO    | Snaping photo (mode=None)
+2025-09-03 22:38:37|tkImageLabel    | DEBUG   | Unloading image
+2025-09-03 22:38:37|user_interface  | DEBUG   | snap: single picture
+2025-09-03 22:38:37|user_interface  | ERROR   | snap: error during snapshot
+Traceback (most recent call last):
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 450, in snap
+    self.__show_countdown(config.countdown1,annotate_size = 160)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 679, in __show_countdown
+    self.__show_overlay_countdown(countdown)
+  File "/home/himesh/photobooth/khichik/scripts/user_interface.py", line 770, in __show_overlay_countdown
+    overlay = self.camera.add_overlay(overlay_image.tobytes(), size=overlay_image.size)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Camera' object has no attribute 'add_overlay'

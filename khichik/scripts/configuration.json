@@ -1,0 +1,22 @@
+{
+    "archive_to_all_usb_drives": true,
+    "countdown_before_snap": 5,
+    "countdown_inter_snap": 3,
+    "email_body": "Greetings, here's your photo sent from the photobooth\n\n\n\n\n\n\n\n\n",
+    "email_subject": "Here's your photo!",
+    "enable_effects": true,
+    "enable_email": false,
+    "enable_email_logging": false,
+    "enable_hardware_buttons": false,
+    "enable_print": false,
+    "enable_upload": false,
+    "full_screen": true,
+    "gmail_user": "None",
+    "google_photo_album_id": "None",
+    "google_photo_album_name": "Drop Box",
+    "local_archive": true,
+    "local_archive_dir": "/home/himesh/photobooth/khichik/Photos",
+    "logo_file": null,
+    "selected_printer": null,
+    "snap_caption": ""
+}
